@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Travel</title>
+    <link rel="stylesheet" href="
+    ./style.css">
+</head>
+
+<body> <!-- Navigáció belső linkekkel -->
+    <header id="home">
+        <h1 class="logo">Dream Travel</h1>
+        <nav> <a href="#destinations">Úti célok</a> <a href="#gallery">Galéria</a> <a href="#contact">Kapcsolat</a>
+            <!-- külső link --> <a href="https://hu.wikipedia.org/wiki/Turizmus" target="_blank"> Turizmus (külső link)
+            </a> </nav>
+    </header> <!-- Úti célok -->
+    <section id="destinations">
+        <h2>Népszerű úti célok</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="badge">Akció</div> <img src="paris.jpg" alt="Paris">
+                <h3>Párizs</h3>
+                <p class="description"> Párizs a romantika fővárosa. A város híres az Eiffel toronyról, múzeumairól és
+                    kávézóiról. </p>
+            </div>
+            <div class="card"> <img src="rome.jpg" alt="Rome">
+                <h3>Róma</h3>
+                <p class="description"> Róma az örök város, ahol történelem és kultúra minden utcában megtalálható. </p>
+            </div>
+            <div class="card"> <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokió</h3>
+                <p class="description"> Tokió modern és hagyományos kultúra különleges keveréke. </p>
+            </div>
+        </div>
+    </section> <!-- Galéria -->
+    <section id="gallery">
+        <h2>Galéria</h2>
+        <div class="gallery"> <img src="city1.jpg"> <img src="city2.jpg"> <img src="city3.jpg"> <img src="city4.jpg">
+        </div>
+    </section> <!-- Kapcsolat -->
+    <section id="contact">
+        <h2>Jelentkezés utazásra</h2>
+        <form> <label>Név</label> <input type="text" required> <label>Email</label> <input type="email"> <label>Úti
+                cél</label> <select>
+                <option>Párizs</option>
+                <option>Róma</option>
+                <option>Tokió</option>
+            </select> <label>Üzenet</label> <textarea></textarea> <button>Küldés</button> </form>
+    </section>
+    <footer>
+        <p>Dream Travel 2026</p>
+    </footer>
+</body>
+
+</html>

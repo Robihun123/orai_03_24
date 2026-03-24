@@ -1,0 +1,149 @@
+/* oldal alap stílus */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* max-width használata */
+header,
+section,
+footer {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* navigáció */
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* hover effekt */
+nav a:hover {
+    color: red;
+}
+
+/* outline amikor input fókuszba kerül */
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* GRID layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* kártya */
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* transform hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* badge absolute position */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+/* kép stílus */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* filter effekt */
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+/* filter hover */
+.card img:hover {
+    filter: grayscale(0%);
+}
+
+/* overflow példa */
+.description {
+    height: 60px;
+    overflow: auto;
+}
+
+/* galéria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    /* aspect ratio */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* attribútum szelektor */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+/* animáció */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    animation: float 3s infinite;
+}
+
+/* CSS kombinátor példák */
+/* csak közvetlen gyermek */
+.card>h3 {
+    color: darkgreen;
+}
+
+/* következő elem */
+.card+.card {
+    border-color: blue;
+}
+
+/* MEDIA QUERY */
+@media (max-width:800px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

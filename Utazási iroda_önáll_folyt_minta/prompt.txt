@@ -1,0 +1,19 @@
+A 16 éves diákokkal html és css leíró nyelveket tanuljuk, azaz webszerkesztést.Szükségem lenne tanulásra és egyben gyakorlásként is olyan feladatra, amelyben tanulhatjuk a:
+- css-szelektor-kombinátorokat (+,~,>), 
+- otline 
+- linkek (oldalon belülre és kívülre), 
+- max-width, min-width,
+- filter-property,
+- attribútum-szelektor?
+- form-elemek,
+- transform,
+- animátció,
+- overflow,
+- transition,
+- object-fit,
+- position
+- css-grid,
+- media-query (méretek, színek változtatásához),
+- aspect-raio
+css-property-ket, html-elemeket az alapelemeken kívül.
+

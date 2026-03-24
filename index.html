@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kalapács Kefás">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/png">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Dream Travel</title>
+</head>
+
+<body>
+    <header style="padding: 4rem 0; text-align:center; font-weight: bold;">
+        <h1>Dream Travel</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Úticélok</a></li>
+            <li><a href="#galery">Galéria</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+            <li><a href="#">Turizmus</a></li>
+            <li><a href="#">Rólunk</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <article>
+                <figure>
+                    <img src="./img/Párizs.jpg" alt="Párizs" title="Párizs">
+                </figure>
+                <div class="card-body">
+                    <h3>Párizs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dignissimos minima fugit maiores
+                        architecto dicta ratione possimus repudiandae accusamus distinctio hic ut ducimus earum, tempore
+                        corporis nam adipisci deserunt? Non.</p>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="./img/Róma.jpg" alt="Róma" title="Róma">
+                </figure>
+                <div class="card-body">
+                    <h3>Róma</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dignissimos minima fugit maiores
+                        architecto dicta ratione possimus repudiandae accusamus distinctio hic ut ducimus earum, tempore
+                        corporis nam adipisci deserunt? Non.</p>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="./img/Tokyo.jpg" alt="Tokyo" title="tokyo">
+                </figure>
+                <div class="card-body">
+                    <h3>Tokyo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dignissimos minima fugit maiores
+                        architecto dicta ratione possimus repudiandae accusamus distinctio hic ut ducimus earum, tempore
+                        corporis nam adipisci deserunt? Non.</p>
+                </div>
+            </article>
+        </div>
+        
+        <hr>
+        <div style="width: 90%; margin:2.5rem 2rem 2.5rem auto;">
+            <h2>Galéria</h2>
+        </div>
+
+        <div class="galery grid" id="galery">
+            <figure>
+                <img src="./img/kep1.jpg" alt="" class="picture">
+            </figure>
+            <figure>
+                <img src="./img/kep2.jpg" alt="" class="picture">
+            </figure>
+            <figure>
+                <img src="./img/kep3.jpg" alt="" class="picture">
+            </figure>
+            <figure>
+                <img src="./img/kep4.jpg" alt="" class="picture">
+            </figure>
+        </div>
+        <hr>
+        <br>
+        <h2>Jelentkezés utazásra</h2>
+
+        <div class="container">
+            <form action="">
+                <label for="name">Név</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="destination">Úticélok</label>
+                <select name="" id="destination">
+                    <option value="roma">Róma</option>
+                    <option value="parizs">Párizs</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="nagyfuged">Nagyfüged</option>
+                    <option value="" selected disabled hidden>Válasszon!</option>
+                </select>
+            </form>
+        </div>
+    </main>
+    <footer style="margin-top: 5rem;">
+
+    </footer>
+</body>
+
+</html>
